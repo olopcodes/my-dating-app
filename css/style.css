@@ -6,19 +6,20 @@
   letter-spacing: 2px;
   margin-bottom: 1rem; }
   .heading--main {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #fffffb; }
+    color: #fffffb;
+    line-height: 0.8; }
     .heading--main span {
       text-transform: lowercase;
       color: #f0a07c;
       font-weight: 400; }
   .heading--small {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: normal; }
 
 .text {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 1rem; }
   .text--cta {
     color: #f0a07c; }
@@ -33,9 +34,9 @@
 .btn:hover,
 .btn:visited {
   cursor: pointer;
-  padding: 1rem 1.2rem;
+  padding: 0.8rem 1rem;
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 5rem; }
 
 .btn--cta,

@@ -18,9 +18,10 @@ $default: "Poppins", sans-serif;
   margin-bottom: 1rem;
 
   &--main {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: $white;
+    line-height: 0.8;
 
     span {
       text-transform: lowercase;
@@ -33,13 +34,13 @@ $default: "Poppins", sans-serif;
   }
 
   &--small {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: normal;
   }
 }
 
 .text {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 
   &--cta {
@@ -63,9 +64,9 @@ $default: "Poppins", sans-serif;
 .btn:hover,
 .btn:visited {
   cursor: pointer;
-  padding: 1rem 1.2rem;
+  padding: 0.8rem 1rem;
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: 5rem;
 }
 

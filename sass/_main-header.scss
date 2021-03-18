@@ -1,0 +1,51 @@
+.main-header {
+  background-color: red;
+  padding: 0.6rem;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  background-color: rgba($white, 0.5);
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba($white, 0.8);
+  }
+
+  .logo--large {
+    display: none;
+  }
+
+  .logo--small {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    // font-weight: 700;
+    // margin: 0;
+
+    span {
+      font-size: 2rem;
+      color: $cta;
+      position: relative;
+      z-index: -1;
+      top: -2px;
+      right: -0.5rem;
+
+      // border: 1px solid;
+    }
+  }
+
+  .btn {
+    display: none;
+  }
+}

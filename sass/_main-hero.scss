@@ -1,0 +1,40 @@
+.main-hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba($black, 0.6) 80%,
+      transparent
+    ),
+    url("../images/main-hero-vsmall.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  padding-top: 5rem;
+  color: $white;
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__text {
+  }
+
+  &__download-icons {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba($primary, 1);
+    background-color: rgba($black, 0.2);
+    padding: 0.5rem;
+    border-radius: 5rem;
+
+    &-icon {
+      cursor: pointer;
+    }
+  }
+}

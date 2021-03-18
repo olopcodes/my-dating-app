@@ -1,0 +1,17 @@
+{
+  "name": "dating-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/style.css -w",
+    "live": "npm run watch & live-server",
+    "compile": "node-sass sass/main.scss css/style.compile.css",
+    "prefix": "postcss --use autoprefixer -b \"last 10 versions\" css/style.compile.css -o css/style.prefix.css",
+    "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build": "npm-run-all compile concat prefix compress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

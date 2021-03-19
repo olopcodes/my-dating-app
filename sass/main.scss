@@ -1,5 +1,6 @@
-@import 'variables';
-@import 'mixins';
-@import 'base';
-@import 'main-header';
-@import 'main-hero';
+@import "shared/variables";
+@import "shared/mixins";
+@import "shared/base";
+@import "shared/main-header";
+@import "home/main-hero";
+@import "home/about";

@@ -61,9 +61,7 @@ $default: "Poppins", sans-serif;
   }
 }
 // btns
-.btn,
-.btn:hover,
-.btn:visited {
+.btn {
   cursor: pointer;
   padding: 0.8rem 1rem;
   text-transform: uppercase;
@@ -71,9 +69,52 @@ $default: "Poppins", sans-serif;
   border-radius: 5rem;
 }
 
+.btn--off {
+  border-radius: 0;
+  display: inline-block;
+  padding: 0;
+  padding-bottom: 0.4rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    // transform: scale(0.5);
+    transform-origin: left;
+    height: 2px;
+    background-color: $white;
+  }
+
+  &:hover::after {
+    animation: animateLine 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  }
+
+  i {
+    padding-left: 0.5rem;
+  }
+}
+
 .btn--cta,
 .btn--cta:visited,
 .btn--cta:link {
   font-weight: 700;
   background-color: $cta;
+}
+
+// keyframes
+@keyframes animateLine {
+  0% {
+    width: 40%;
+    // transform: scale(0.5);
+    // opacity: 0;
+  }
+
+  100% {
+    // transform: scale(1);
+    width: 100%;
+    // opacity: 1;
+  }
 }

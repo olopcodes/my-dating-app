@@ -191,13 +191,13 @@ li {
     width: 70%;
     margin-bottom: 3rem; }
   .about__img {
-    height: 20rem;
+    height: 18rem;
     position: relative;
     z-index: 1;
     display: flex;
     align-items: center; }
   .about__img-box {
-    height: 15rem;
+    height: 12rem;
     width: 90%; }
   .about__img-box img {
     height: 100%;

@@ -17,12 +17,16 @@
   .heading--sub {
     font-size: 2.1rem; }
   .heading--small {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
     font-weight: normal; }
 
 .text {
   font-size: 1rem;
   margin-bottom: 1rem; }
+  .text--small {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem; }
   .text--cta {
     color: #f0a07c; }
   .text--white {

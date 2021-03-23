@@ -35,7 +35,8 @@ $default: "Poppins", sans-serif;
   }
 
   &--small {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
     font-weight: normal;
   }
 }
@@ -43,6 +44,11 @@ $default: "Poppins", sans-serif;
 .text {
   font-size: 1rem;
   margin-bottom: 1rem;
+
+  &--small {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
 
   &--cta {
     color: $cta;

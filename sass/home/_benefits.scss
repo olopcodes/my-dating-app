@@ -55,3 +55,47 @@
     }
   }
 }
+
+// slider
+.slider {
+  padding: 4rem 0;
+  background-color: rgba($primary, 0.3);
+  h2 {
+    text-align: center;
+    span {
+      text-transform: lowercase;
+      color: $primary;
+      font-weight: bold;
+    }
+  }
+
+  &__slide {
+    margin-top: 4rem;
+    // display: flex;
+    background-color: $white;
+    padding: 0.8rem;
+    border: 1px solid salmon;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+    // flex-direction: column;
+    // align-items: center;
+    // border: 1px solid red;
+  }
+
+  &__quote {
+    font-size: 1rem;
+    float: left;
+    // flex: 1;
+  }
+
+  &__img {
+    flex: 1;
+    // float: right;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid $cta;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+}

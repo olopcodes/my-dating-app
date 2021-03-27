@@ -257,3 +257,30 @@ li {
       height: 100%;
       width: 100%;
       object-fit: cover; }
+
+.slider {
+  padding: 4rem 0;
+  background-color: rgba(74, 39, 79, 0.3); }
+  .slider h2 {
+    text-align: center; }
+    .slider h2 span {
+      text-transform: lowercase;
+      color: #4a274f;
+      font-weight: bold; }
+  .slider__slide {
+    margin-top: 4rem;
+    background-color: #fffffb;
+    padding: 0.8rem;
+    border: 1px solid salmon;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+  .slider__quote {
+    font-size: 1rem;
+    float: left; }
+  .slider__img {
+    flex: 1;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #f0a07c;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }

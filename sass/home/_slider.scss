@@ -1,0 +1,38 @@
+.slider {
+  padding: 4rem 0;
+  background-color: rgba($primary, 0.5);
+  position: relative;
+
+  h2 {
+    text-align: center;
+  }
+  h2 span {
+    text-transform: lowercase;
+
+    color: $cta;
+  }
+
+  &__slides {
+    margin-top: 4rem;
+  }
+
+  &__slide {
+    border: 1px solid skyblue;
+    position: relative;
+  }
+
+  &__icon {
+  }
+
+  &__quote {
+    background-color: $white;
+    padding: 2.5rem 1rem;
+    font-style: italic;
+  }
+
+  &__slide--bottom {
+  }
+
+  &__img-box {
+  }
+}

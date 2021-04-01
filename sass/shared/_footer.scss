@@ -1,0 +1,71 @@
+.footer {
+  background-color: $primary;
+  padding: 5rem 0 2rem;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    color: $white;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+  &__left {
+    width: 18rem;
+  }
+
+  &__left .logo {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &__left .logo span {
+    color: $cta;
+  }
+
+  &__left p {
+    color: $white;
+  }
+
+  &__content {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba($white, 0.2);
+  }
+
+  &__middle {
+    flex: 28%;
+    a {
+      color: $cta;
+    }
+  }
+
+  &__right {
+    // border: 1px solid salmon;
+    flex: 69%;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__submit {
+    border: none;
+    background-color: $cta;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+  }
+
+  &__copyright {
+    margin-top: 0.5rem;
+    color: $white;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}

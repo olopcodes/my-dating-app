@@ -28,29 +28,35 @@
   }
 
   &__content {
+    height: 12rem;
     margin-top: 1.5rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    // border: 1px solid skyblue;
+    align-items: space-between;
     padding-bottom: 0.8rem;
     border-bottom: 1px solid rgba($white, 0.2);
   }
 
   &__middle {
-    flex: 28%;
+    // flex: 28%;
     a {
+      font-size: 1.5rem;
       color: $cta;
+      margin-right: 0.8rem;
     }
   }
 
   &__right {
     // border: 1px solid salmon;
-    flex: 69%;
+    // flex: 69%;
   }
 
   &__input {
     border: none;
     outline: none;
-    padding: 0.4rem;
+    padding: 0.8rem;
     border-radius: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -58,8 +64,8 @@
   &__submit {
     border: none;
     background-color: $cta;
-    padding: 0.4rem;
-    border-radius: 0.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.8rem;
   }
 
   &__copyright {

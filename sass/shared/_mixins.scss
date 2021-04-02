@@ -1,0 +1,30 @@
+@mixin media($width) {
+  @if ($width == "small") {
+    @media screen and (max-width: 31.5em) {
+      @content;
+    }
+  }
+  @if ($width == "tablet") {
+    @media screen and (max-width: 48em) {
+      @content;
+    }
+  }
+
+  @if ($width == "large") {
+    @media screen and (max-width: 68em) {
+      @content;
+    }
+  }
+
+  @if ($width == "xlarge") {
+    @media screen and (max-width: 87.5em) {
+      @content;
+    }
+  }
+
+  @if ($width == "xxlarge") {
+    @media screen and (max-width: 115em) {
+      @content;
+    }
+  }
+}

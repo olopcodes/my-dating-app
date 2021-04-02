@@ -16,6 +16,10 @@
     &:not(:last-of-type) {
       margin-bottom: 1.5rem;
     }
+    @include media("tablet") {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 
   &__icon {
@@ -52,6 +56,9 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
+    }
+    @include media("tablet") {
+      height: 35rem;
     }
   }
 }

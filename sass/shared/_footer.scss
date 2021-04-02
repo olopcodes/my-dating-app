@@ -38,6 +38,12 @@
     padding-bottom: 1.5rem;
     margin-bottom: 2rem;
     border-bottom: 1px solid rgba($white, 0.2);
+
+    @include media("tablet") {
+      height: 10rem;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   &__middle {

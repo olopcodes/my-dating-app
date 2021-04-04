@@ -1,29 +1,31 @@
 @mixin media($width) {
+  // 500px
   @if ($width == "small") {
-    @media screen and (max-width: 31.5em) {
+    @media screen and (min-width: 31.25em) {
       @content;
     }
   }
+  // 768px
   @if ($width == "tablet") {
-    @media screen and (max-width: 48em) {
+    @media screen and (min-width: 48em) {
       @content;
     }
   }
-
+  // 1080
   @if ($width == "large") {
-    @media screen and (max-width: 68em) {
+    @media screen and (min-width: 68em) {
       @content;
     }
   }
-
+  // 1350
   @if ($width == "xlarge") {
-    @media screen and (max-width: 87.5em) {
+    @media screen and (min-width: 87.5em) {
       @content;
     }
   }
 
   @if ($width == "xxlarge") {
-    @media screen and (max-width: 115em) {
+    @media screen and (min-width: 110em) {
       @content;
     }
   }

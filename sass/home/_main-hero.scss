@@ -11,9 +11,6 @@
   height: 90vh;
   padding-top: 5rem;
   color: $white;
-  @include media("tablet") {
-    height: 60vh;
-  }
 
   .container {
     height: 100%;

@@ -34,7 +34,7 @@
     }
 
     @include media("tablet") {
-      width: 20rem;
+      width: 16rem;
     }
   }
 
@@ -73,6 +73,7 @@
 
   &__btn--left,
   &__btn--right {
+    cursor: pointer;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -80,9 +81,11 @@
     padding: 1.2rem;
     border: none;
     font-size: 1.5rem;
-    background-color: rgba($primary, 0.8);
+    background-color: transparent;
     color: $white;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    &:focus {
+      outline: none;
+    }
   }
 
   &__btn--left {

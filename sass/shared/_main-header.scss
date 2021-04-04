@@ -8,10 +8,16 @@
   width: 100%;
   background-color: transparent;
   background-color: rgba($white, 0.5);
+  @include media("tablet") {
+    padding: 0.6rem 0;
+  }
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include media("tablet") {
+      justify-content: space-between;
+    }
   }
 
   .logo {
@@ -47,5 +53,8 @@
 
   .btn {
     display: none;
+    @include media("tablet") {
+      display: block;
+    }
   }
 }

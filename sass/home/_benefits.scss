@@ -13,8 +13,13 @@
       flex-direction: column;
       align-items: center;
     }
+
+    @include media("desktop") {
+      flex-direction: row;
+    }
   }
 
+  // benefits wrapper
   &__wrapper {
     // border: 1px solid red;
     margin: 4rem 0;
@@ -23,10 +28,17 @@
   &__benefit {
     &:not(:last-of-type) {
       margin-bottom: 1.5rem;
+      @include media("desktop") {
+        margin-bottom: 1rem;
+      }
     }
     @include media("tablet") {
       width: 80%;
       margin: 0 auto;
+    }
+
+    &:nth-of-type(2n) {
+      transform: translateX(10%);
     }
   }
 
@@ -60,14 +72,24 @@
 
   &__img-box {
     height: 20rem;
+    // border: 1px solid red;
     img {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      @include media("desktop") {
+        object-fit: fill;
+      }
     }
     @include media("tablet") {
       height: 35rem;
       width: 35rem;
+    }
+
+    @include media("desktop") {
+      flex: 1;
+      height: 35rem;
+      // width: 20rem;
     }
   }
 }

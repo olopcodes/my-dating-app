@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include media("tablet") {
+    @include media("small") {
       justify-content: space-between;
     }
   }
@@ -30,14 +30,26 @@
 
   .logo--large {
     display: none;
+    @include media("small") {
+      display: block;
+    }
+    span {
+      font-size: 2rem;
+      color: $cta;
+      position: relative;
+      z-index: -1;
+      top: -2px;
+      right: -0.5rem;
+    }
   }
 
   .logo--small {
     display: inline-block;
     position: relative;
     z-index: 1;
-    // font-weight: 700;
-    // margin: 0;
+    @include media("small") {
+      display: none;
+    }
 
     span {
       font-size: 2rem;
@@ -46,14 +58,12 @@
       z-index: -1;
       top: -2px;
       right: -0.5rem;
-
-      // border: 1px solid;
     }
   }
 
   .btn {
     display: none;
-    @include media("tablet") {
+    @include media("small") {
       display: block;
     }
   }

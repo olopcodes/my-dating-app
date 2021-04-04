@@ -123,9 +123,9 @@ li {
   @media screen and (min-width: 48em) {
     .container {
       padding: 0 2rem; } }
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 68em) {
     .container {
-      padding: 0 3rem; } }
+      padding: 0 4rem; } }
 
 .main-header {
   background-color: red;
@@ -144,7 +144,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center; }
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 31.25em) {
       .main-header .container {
         justify-content: space-between; } }
   .main-header .logo {
@@ -155,10 +155,23 @@ li {
     color: rgba(255, 255, 251, 0.8); }
   .main-header .logo--large {
     display: none; }
+    @media screen and (min-width: 31.25em) {
+      .main-header .logo--large {
+        display: block; } }
+    .main-header .logo--large span {
+      font-size: 2rem;
+      color: #f0a07c;
+      position: relative;
+      z-index: -1;
+      top: -2px;
+      right: -0.5rem; }
   .main-header .logo--small {
     display: inline-block;
     position: relative;
     z-index: 1; }
+    @media screen and (min-width: 31.25em) {
+      .main-header .logo--small {
+        display: none; } }
     .main-header .logo--small span {
       font-size: 2rem;
       color: #f0a07c;
@@ -168,7 +181,7 @@ li {
       right: -0.5rem; }
   .main-header .btn {
     display: none; }
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 31.25em) {
       .main-header .btn {
         display: block; } }
 
@@ -180,6 +193,34 @@ li {
   height: 90vh;
   padding-top: 5rem;
   color: #fffffb; }
+  @media screen and (min-width: 48em) {
+    .main-hero {
+      background-image: linear-gradient(to bottom, rgba(61, 59, 48, 0.6) 80%, transparent), url("../images/main-hero-small.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 60vh; } }
+  @media screen and (min-width: 48em) {
+    .main-hero {
+      background-image: linear-gradient(to bottom, rgba(61, 59, 48, 0.6) 80%, transparent), url("../images/main-hero-medium.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 75vh; } }
+  @media screen and (min-width: 68em) {
+    .main-hero {
+      background-image: linear-gradient(to bottom, rgba(61, 59, 48, 0.6) 80%, transparent), url("../images/main-hero-large.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 90vh; } }
+  @media screen and (min-width: 110em) {
+    .main-hero {
+      background-image: linear-gradient(to bottom, rgba(61, 59, 48, 0.6) 80%, transparent), url("../images/main-hero-xl.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 80vh; } }
   .main-hero .container {
     height: 100%;
     display: flex;
@@ -190,6 +231,9 @@ li {
         align-items: flex-start; } }
   .main-hero__text {
     width: 70%; }
+    @media screen and (min-width: 68em) {
+      .main-hero__text {
+        width: 40%; } }
 
 .download {
   padding: 4rem 0; }
@@ -203,6 +247,9 @@ li {
     display: flex;
     justify-content: space-around;
     width: 20rem; }
+    @media screen and (min-width: 68em) {
+      .download__icons {
+        width: 25rem; } }
   .download__icon {
     padding: 0.8rem 1rem;
     cursor: pointer;
@@ -211,6 +258,10 @@ li {
     color: #fffffb;
     border-radius: 3rem;
     box-shadow: 0 3px 3px 3px rgba(61, 59, 48, 0.2); }
+    @media screen and (min-width: 68em) {
+      .download__icon {
+        padding: 1.2rem 1.8rem;
+        font-size: 1.2rem; } }
     .download__icon i {
       color: #f0a07c; }
   .download h2 {
@@ -225,12 +276,19 @@ li {
   @media screen and (min-width: 48em) {
     .about {
       padding: 4rem 0 12rem; } }
+  @media screen and (min-width: 68em) {
+    .about .container {
+      display: flex;
+      align-items: center; } }
   .about__text {
     width: 70%;
     margin-bottom: 3rem; }
     @media screen and (min-width: 48em) {
       .about__text {
-        width: 60%; } }
+        width: 50%; } }
+    @media screen and (min-width: 68em) {
+      .about__text {
+        margin-right: 5rem; } }
   .about__img {
     height: 18rem;
     position: relative;
@@ -249,7 +307,11 @@ li {
         width: 75%; } }
     @media screen and (min-width: 48em) {
       .about__img-box {
-        width: 70%; } }
+        width: 50%;
+        margin-left: 6rem; } }
+    @media screen and (min-width: 68em) {
+      .about__img-box {
+        width: 60%; } }
   .about__img-box img {
     height: 100%;
     width: 100%; }
@@ -262,6 +324,13 @@ li {
     z-index: -1;
     background-color: #f0a07c;
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zm20.97 0l9.315 9.314-1.414 1.414L34.828 0h2.83zM22.344 0L13.03 9.314l1.414 1.414L25.172 0h-2.83zM32 0l12.142 12.142-1.414 1.414L30 .828 17.272 13.556l-1.414-1.414L28 0h4zM.284 0l28 28-1.414 1.414L0 2.544V0h.284zM0 5.373l25.456 25.455-1.414 1.415L0 8.2V5.374zm0 5.656l22.627 22.627-1.414 1.414L0 13.86v-2.83zm0 5.656l19.8 19.8-1.415 1.413L0 19.514v-2.83zm0 5.657l16.97 16.97-1.414 1.415L0 25.172v-2.83zM0 28l14.142 14.142-1.414 1.414L0 30.828V28zm0 5.657L11.314 44.97 9.9 46.386l-9.9-9.9v-2.828zm0 5.657L8.485 47.8 7.07 49.212 0 42.143v-2.83zm0 5.657l5.657 5.657-1.414 1.415L0 47.8v-2.83zm0 5.657l2.828 2.83-1.414 1.413L0 53.456v-2.83zM54.627 60L30 35.373 5.373 60H8.2L30 38.2 51.8 60h2.827zm-5.656 0L30 41.03 11.03 60h2.828L30 43.858 46.142 60h2.83zm-5.656 0L30 46.686 16.686 60h2.83L30 49.515 40.485 60h2.83zm-5.657 0L30 52.343 22.343 60h2.83L30 55.172 34.828 60h2.83zM32 60l-2-2-2 2h4zM59.716 0l-28 28 1.414 1.414L60 2.544V0h-.284zM60 5.373L34.544 30.828l1.414 1.415L60 8.2V5.374zm0 5.656L37.373 33.656l1.414 1.414L60 13.86v-2.83zm0 5.656l-19.8 19.8 1.415 1.413L60 19.514v-2.83zm0 5.657l-16.97 16.97 1.414 1.415L60 25.172v-2.83zM60 28L45.858 42.142l1.414 1.414L60 30.828V28zm0 5.657L48.686 44.97l1.415 1.415 9.9-9.9v-2.828zm0 5.657L51.515 47.8l1.414 1.413 7.07-7.07v-2.83zm0 5.657l-5.657 5.657 1.414 1.415L60 47.8v-2.83zm0 5.657l-2.828 2.83 1.414 1.413L60 53.456v-2.83zM39.9 16.385l1.414-1.414L30 3.658 18.686 14.97l1.415 1.415 9.9-9.9 9.9 9.9zm-2.83 2.828l1.415-1.414L30 9.313 21.515 17.8l1.414 1.413 7.07-7.07 7.07 7.07zm-2.827 2.83l1.414-1.416L30 14.97l-5.657 5.657 1.414 1.415L30 17.8l4.243 4.242zm-2.83 2.827l1.415-1.414L30 20.626l-2.828 2.83 1.414 1.414L30 23.456l1.414 1.414zM56.87 59.414L58.284 58 30 29.716 1.716 58l1.414 1.414L30 32.544l26.87 26.87z' fill='%234a274f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E"); }
+    @media screen and (min-width: 48em) {
+      .about__img-bg {
+        width: 50%;
+        right: 10%; } }
+    @media screen and (min-width: 68em) {
+      .about__img-bg {
+        right: 0; } }
 
 .benefits {
   padding: 5rem 0; }
@@ -274,14 +343,22 @@ li {
       display: flex;
       flex-direction: column;
       align-items: center; } }
+  @media screen and (min-width: 68em) {
+    .benefits .container {
+      flex-direction: row; } }
   .benefits__wrapper {
     margin: 4rem 0; }
   .benefits__benefit:not(:last-of-type) {
     margin-bottom: 1.5rem; }
+    @media screen and (min-width: 68em) {
+      .benefits__benefit:not(:last-of-type) {
+        margin-bottom: 1rem; } }
   @media screen and (min-width: 48em) {
     .benefits__benefit {
       width: 80%;
       margin: 0 auto; } }
+  .benefits__benefit:nth-of-type(2n) {
+    transform: translateX(10%); }
   .benefits__icon {
     display: flex;
     justify-content: center;
@@ -310,10 +387,17 @@ li {
       height: 100%;
       width: 100%;
       object-fit: cover; }
+      @media screen and (min-width: 68em) {
+        .benefits__img-box img {
+          object-fit: fill; } }
     @media screen and (min-width: 48em) {
       .benefits__img-box {
         height: 35rem;
         width: 35rem; } }
+    @media screen and (min-width: 68em) {
+      .benefits__img-box {
+        flex: 1;
+        height: 35rem; } }
 
 .slider {
   padding: 4rem 0;
@@ -389,6 +473,9 @@ li {
     @media screen and (min-width: 48em) {
       .slider__btn--left {
         left: 20%; } }
+    @media screen and (min-width: 68em) {
+      .slider__btn--left {
+        left: 30%; } }
   .slider__btn--right {
     left: 90%; }
     @media screen and (min-width: 31.25em) {
@@ -397,6 +484,9 @@ li {
     @media screen and (min-width: 48em) {
       .slider__btn--right {
         left: 80%; } }
+    @media screen and (min-width: 48em) {
+      .slider__btn--right {
+        left: 70%; } }
 
 .footer {
   background-color: #4a274f;
@@ -405,13 +495,24 @@ li {
     display: flex;
     flex-direction: column;
     color: #fffffb; }
+    @media screen and (min-width: 68em) {
+      .footer .container {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap; } }
   .footer h4 {
     font-size: 1.4rem; }
   .footer__left {
     width: 18rem; }
+    @media screen and (min-width: 68em) {
+      .footer__left {
+        flex: 1; } }
   .footer__left .logo {
     font-size: 2rem;
     margin-bottom: 0.8rem; }
+    @media screen and (min-width: 48em) {
+      .footer__left .logo {
+        margin-bottom: 0.4rem; } }
   .footer__left .logo span {
     color: #f0a07c; }
   .footer__left p {
@@ -431,10 +532,17 @@ li {
         height: 10rem;
         flex-direction: row;
         align-items: center; } }
+    @media screen and (min-width: 68em) {
+      .footer__content {
+        flex: 2;
+        border-bottom: none; } }
   .footer__middle a {
     font-size: 1.5rem;
     color: #f0a07c;
     margin-right: 0.8rem; }
+  @media screen and (min-width: 68em) {
+    .footer__middle {
+      margin-left: 3rem; } }
   .footer__input {
     border: none;
     outline: none;
@@ -449,3 +557,8 @@ li {
     color: #fffffb;
     font-size: 0.8rem;
     text-align: center; }
+    @media screen and (min-width: 68em) {
+      .footer__copyright {
+        border-top: 1px solid rgba(255, 255, 251, 0.2);
+        flex: 100%;
+        padding-top: 2rem; } }

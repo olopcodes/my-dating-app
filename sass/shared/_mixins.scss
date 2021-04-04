@@ -12,7 +12,7 @@
     }
   }
   // 1080
-  @if ($width == "large") {
+  @if ($width == "desktop") {
     @media screen and (min-width: 68em) {
       @content;
     }

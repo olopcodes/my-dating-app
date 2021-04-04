@@ -6,17 +6,29 @@
     display: flex;
     flex-direction: column;
     color: $white;
+
+    @include media("desktop") {
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+    }
   }
   h4 {
     font-size: 1.4rem;
   }
   &__left {
     width: 18rem;
+    @include media("desktop") {
+      flex: 1;
+    }
   }
 
   &__left .logo {
     font-size: 2rem;
     margin-bottom: 0.8rem;
+    @include media("tablet") {
+      margin-bottom: 0.4rem;
+    }
   }
 
   &__left .logo span {
@@ -44,6 +56,11 @@
       flex-direction: row;
       align-items: center;
     }
+
+    @include media("desktop") {
+      flex: 2;
+      border-bottom: none;
+    }
   }
 
   &__middle {
@@ -52,6 +69,9 @@
       font-size: 1.5rem;
       color: $cta;
       margin-right: 0.8rem;
+    }
+    @include media("desktop") {
+      margin-left: 3rem;
     }
   }
 
@@ -80,5 +100,10 @@
     color: $white;
     font-size: 0.8rem;
     text-align: center;
+    @include media("desktop") {
+      border-top: 1px solid rgba($white, 0.2);
+      flex: 100%;
+      padding-top: 2rem;
+    }
   }
 }

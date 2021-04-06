@@ -7,10 +7,16 @@
   left: 0;
   width: 100%;
   background-color: transparent;
-  background-color: rgba($white, 0.5);
+  transition: background-color 0.3s ease;
+  // background-color: rgba($white, 0.5);
   @include media("tablet") {
     padding: 0.6rem 0;
   }
+
+  &.scrolled {
+    background-color: rgba($primary, 0.7);
+  }
+
   .container {
     display: flex;
     justify-content: center;

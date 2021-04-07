@@ -55,3 +55,14 @@ li {
     padding: 0 4rem;
   }
 }
+
+.section--hidden {
+  transition: all 1.5s ease-in;
+  transform: translateY(-8rem);
+  opacity: 0;
+}
+
+.section--display {
+  transform: translateY(0);
+  opacity: 1;
+}

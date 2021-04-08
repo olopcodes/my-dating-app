@@ -1,7 +1,7 @@
 const header = document.querySelector(".main-header");
 const mainHero = document.querySelector(".main-hero");
-const animateSections = document.querySelectorAll(".section--hidden");
-console.log(animateSections);
+const sections = document.querySelectorAll(".section--hidden");
+// console.log(animateSections);
 
 const options = {
   root: null,
@@ -31,26 +31,23 @@ const mainHeroObserver = new IntersectionObserver(function (entries, observer) {
 
 // observe whether the mainHero is intersecting the viewport
 mainHeroObserver.observe(mainHero);
-// observer.unobserve(mainHero);
 
-const revealSections = (entries, observer) => {
-  const [entry] = entries;
-  // console.log(entry);
-  if (!entry.isIntersecting) return;
-  entry.target.classList.remove("section--hidden");
-
-  observer.unobserve(entry.target);
+// observer for sections
+const sectionOptions = {
+  root: null,
+  threshold: 0.4,
 };
 
-const animateSectionsObserver = new IntersectionObserver(revealSections, {
-  root: null,
-  // threshold: 0.15,
-  threshold: 0,
-  rootMargin: `100px`,
-});
+const sectionsObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    console.log(entry);
+    entry.target.classList.remove("section--hidden");
+    observer.unobserve(entry.target);
+    // console.log(entry);
+  });
+}, sectionOptions);
 
-animateSections.forEach((section) => {
-  animateSectionsObserver.observe(section);
-
-  section.classList.add("section--hidden");
+sections.forEach((section) => {
+  sectionsObserver.observe(section);
 });

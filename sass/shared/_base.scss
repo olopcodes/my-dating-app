@@ -56,9 +56,12 @@ li {
   }
 }
 
+.section {
+  transition: all 1.5s ease;
+}
+
 .section--hidden {
-  transition: all 1.5s ease-in;
-  transform: translateY(-8rem);
+  transform: translateY(15rem);
   opacity: 0;
 }
 
